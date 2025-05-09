@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('https://www.hollywoodreporter.com/wp-content/uploads/2015/12/star_wars_the_force_awakens_john_boyega_still.jpg?w=1440&h=810&crop=1');
 }
 
 .search-container {
@@ -31,6 +32,7 @@ body {
   outline: none;
   font-size: 16px;
   background-color: transparent;
+  color: white ;
 }
 
 .search-button {
@@ -85,4 +87,16 @@ dialog::backdrop {
 
 #close-dialog:hover {
     background-color: #0056b3;
+}
+
+a:visited {
+  color: hotpink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: palegreen;
+  background-color: transparent;
+  text-decoration: underline;
 }

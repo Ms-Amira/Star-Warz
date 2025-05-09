@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function displayCharacters(characters){
   const listOfCharacterNames = characters.map(character => {
-    return `<li><a data-url="${character.url}">${character.name}</a></li>`
+    return `<li><a href=# data-url="${character.url}">${character.name}</a></li>`
   })
   .join(" ");
   results.innerHTML = `<ul class="characters">${listOfCharacterNames}</ul>`;
@@ -49,7 +49,7 @@ function displayCharacters(characters){
 };
 
 const displayError = () => {
-results.innerHTML = `<ul class='characters'><li>No Data</li></ul>`
+results.innerHTML = `<ul class='characters'><li>The characters you seek are not here!</li></ul>`
 }
 
 function debounce(func, wait) {
